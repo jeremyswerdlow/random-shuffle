@@ -15,6 +15,7 @@ export const strings = {
     header: "Output",
   },
   footer: {
+    codeUrl: "https://github.com/jeremyswerdlow/random-shuffle",
     siteUrl: "https://jeremyswerdlow.github.io/about",
     text: "Jeremy Swerdlow"
   }

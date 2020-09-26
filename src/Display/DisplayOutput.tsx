@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { saveAs } from 'file-saver';
-import { Button, ButtonGroup, Paper, TextField, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, TextField, Typography } from "@material-ui/core";
 import ClearAllRoundedIcon from '@material-ui/icons/ClearAllRounded';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 import { FileSnackbar } from ".";
@@ -46,7 +46,7 @@ export const DisplayOutput: FC<DisplayOutputProps> = (props) => {
       <Typography gutterBottom variant="h4" >
         {props.strings.header}
       </Typography>
-      <Paper style={{minHeight: "102px"}}>
+      <div style={{minHeight: "102px"}}>
 
         {/* Managing the output */}
         <ButtonGroup color="primary" fullWidth style={{marginBottom: "10px"}} variant="outlined">
@@ -64,7 +64,7 @@ export const DisplayOutput: FC<DisplayOutputProps> = (props) => {
           value={props.entries.join("\n")}
           variant="outlined"
         />
-      </Paper>
+      </div>
     </>
   );
 };

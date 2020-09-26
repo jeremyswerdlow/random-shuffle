@@ -1,10 +1,10 @@
 import React, { ChangeEvent, FC, useState } from "react";
-import { Button, ButtonGroup, Paper, TextField, Typography } from "@material-ui/core";
+import { Button, ButtonGroup, TextField, Typography } from "@material-ui/core";
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import PublishRoundedIcon from '@material-ui/icons/PublishRounded';
 import ShuffleRoundedIcon from '@material-ui/icons/ShuffleRounded';
-import { FileSnackbar } from ".";
 import { emptyStringArr } from "../Constants";
+import { FileSnackbar } from ".";
 
 type DisplayInputProps = {
   entries: string[],
@@ -48,7 +48,7 @@ export const DisplayInput: FC<DisplayInputProps> = (props) => {
         {props.strings.header}
       </Typography>
       <FileSnackbar message="Upload Successful" open={open} handleClose={handleClose}/>
-      <Paper >
+      <div>
 
         {/* Managing the input */}
         <input
@@ -72,7 +72,7 @@ export const DisplayInput: FC<DisplayInputProps> = (props) => {
           value={props.entries.join("\n")}
           variant="outlined"
         />
-      </Paper>
+      </div>
     </>
   );
 }

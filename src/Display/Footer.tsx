@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Link, Paper, Typography, useTheme } from "@material-ui/core";
+import { Link, Typography, useTheme } from "@material-ui/core";
 import styled from "styled-components";
 
 const StyledBottomDiv = styled.div`
@@ -7,10 +7,24 @@ const StyledBottomDiv = styled.div`
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: rgba(6, 6, 6, 0.6);
 `;
+
+type FooterLinkProps = {
+  link: string,
+}
+
+const FooterLink: FC<FooterLinkProps> = (props) => {
+  return (
+    <Link color="inherit" href={props.link} target="_blank">
+      {props.children}
+    </Link>
+  );
+}
 
 type FooterProps = {
   strings: {
+    codeUrl: string,
     siteUrl: string,
     text: string,
   }
@@ -19,16 +33,14 @@ type FooterProps = {
 export const Footer: FC<FooterProps> = (props) => {
   return (
     <StyledBottomDiv>
-      <Paper square style={{borderTop: "solid 1px", borderColor: useTheme().palette.primary.dark}}>
+      <div style={{borderTop: "solid 1px", borderColor: useTheme().palette.primary.dark}}>
         <Typography variant="body2" color="primary" style={{padding: "10px"}}>
           {'Copyright © '}
-          <Link color="inherit" href={props.strings.siteUrl}>
-            {props.strings.text}
-          </Link>{' '}
-          {new Date().getFullYear()}
-          {'.'}
+          <FooterLink link={props.strings.siteUrl}>{props.strings.text}</FooterLink>
+          {' '}{new Date().getFullYear()}{'. See the '}
+          <FooterLink link={props.strings.codeUrl}>{"source code here."}</FooterLink>
         </Typography>
-      </Paper>
+      </div>
     </StyledBottomDiv>
   );
 }

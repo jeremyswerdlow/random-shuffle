@@ -43,6 +43,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Grid container spacing={0}>
+
         {/* Header for the Project */}
         <Grid item xs={12} style={{padding: "25px"}} >
           <Header strings={strings.header}/>
@@ -68,6 +69,7 @@ function App() {
         </Grid>
       </Grid>
 
+      {/* Footer for the Project */}
       <div style={{padding: "15px"}}/>
       <Footer strings={strings.footer}/>
     </ThemeProvider>
