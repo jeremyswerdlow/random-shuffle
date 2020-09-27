@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/random-shuffle/static/js/main.2b27d4f2.chunk.js",
-    "main.js.map": "/random-shuffle/static/js/main.2b27d4f2.chunk.js.map",
+    "main.js": "/random-shuffle/static/js/main.1f0530fa.chunk.js",
+    "main.js.map": "/random-shuffle/static/js/main.1f0530fa.chunk.js.map",
     "runtime-main.js": "/random-shuffle/static/js/runtime-main.7ac96d20.js",
     "runtime-main.js.map": "/random-shuffle/static/js/runtime-main.7ac96d20.js.map",
     "static/css/2.98a94a3a.chunk.css": "/random-shuffle/static/css/2.98a94a3a.chunk.css",
     "static/js/2.80069ba9.chunk.js": "/random-shuffle/static/js/2.80069ba9.chunk.js",
     "static/js/2.80069ba9.chunk.js.map": "/random-shuffle/static/js/2.80069ba9.chunk.js.map",
     "index.html": "/random-shuffle/index.html",
-    "precache-manifest.a54fcea84ade6d5236c19869a30e8a36.js": "/random-shuffle/precache-manifest.a54fcea84ade6d5236c19869a30e8a36.js",
+    "precache-manifest.26ca8ac271082fc40f0b49e6c2f0f973.js": "/random-shuffle/precache-manifest.26ca8ac271082fc40f0b49e6c2f0f973.js",
     "service-worker.js": "/random-shuffle/service-worker.js",
     "static/css/2.98a94a3a.chunk.css.map": "/random-shuffle/static/css/2.98a94a3a.chunk.css.map",
     "static/js/2.80069ba9.chunk.js.LICENSE.txt": "/random-shuffle/static/js/2.80069ba9.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.7ac96d20.js",
     "static/css/2.98a94a3a.chunk.css",
     "static/js/2.80069ba9.chunk.js",
-    "static/js/main.2b27d4f2.chunk.js"
+    "static/js/main.1f0530fa.chunk.js"
   ]
 }
