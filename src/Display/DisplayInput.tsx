@@ -4,7 +4,7 @@ import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import PublishRoundedIcon from '@material-ui/icons/PublishRounded';
 import ShuffleRoundedIcon from '@material-ui/icons/ShuffleRounded';
 import { emptyStringArr } from "../Constants";
-import { FileSnackbar } from ".";
+import { ShuffleSnackbar } from ".";
 
 type DisplayInputProps = {
   entries: string[],
@@ -47,7 +47,7 @@ export const DisplayInput: FC<DisplayInputProps> = (props) => {
       <Typography gutterBottom variant="h4" >
         {props.strings.header}
       </Typography>
-      <FileSnackbar message="Upload Successful" open={open} handleClose={handleClose}/>
+      <ShuffleSnackbar message="Upload Successful" open={open} handleClose={handleClose}/>
       <div>
 
         {/* Managing the input */}

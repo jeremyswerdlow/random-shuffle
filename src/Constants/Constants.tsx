@@ -6,7 +6,7 @@ export const strings = {
     + "you can't decide where to go to eat. It also allows for uploading and "
     + "downloading the inputs and outputs of the shuffler. Inputs should be comma or "
     + "new-line separated (by pressing enter), and will automatically format to new-"
-    + "line on commas."
+    + "line on commas.",
   },
   input: {
     header: "Input",
@@ -17,7 +17,7 @@ export const strings = {
   footer: {
     codeUrl: "https://github.com/jeremyswerdlow/random-shuffle",
     siteUrl: "https://jeremyswerdlow.github.io/about",
-    text: "Jeremy Swerdlow"
+    text: "Jeremy Swerdlow",
   }
 }
 

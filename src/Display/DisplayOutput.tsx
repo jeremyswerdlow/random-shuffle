@@ -3,7 +3,7 @@ import { saveAs } from 'file-saver';
 import { Button, ButtonGroup, TextField, Typography } from "@material-ui/core";
 import ClearAllRoundedIcon from '@material-ui/icons/ClearAllRounded';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
-import { FileSnackbar } from ".";
+import { ShuffleSnackbar } from ".";
 
 type DisplayOutputProps = {
   entries: string[],
@@ -41,8 +41,8 @@ export const DisplayOutput: FC<DisplayOutputProps> = (props) => {
 
   return (
     <>
-      <FileSnackbar message="Download Successful" open={showSuccess} handleClose={handleClose} />
-      <FileSnackbar message="No Result to Download" open={showFailure} severity="warning" handleClose={handleClose} />
+      <ShuffleSnackbar message="Download Successful" open={showSuccess} handleClose={handleClose} />
+      <ShuffleSnackbar message="No Result to Download" open={showFailure} severity="warning" handleClose={handleClose} />
       <Typography gutterBottom variant="h4" >
         {props.strings.header}
       </Typography>

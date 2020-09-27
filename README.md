@@ -1,44 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random Shuffle
 
-## Available Scripts
+This project was a simple way for individuals to generate a random permutation of a list
+of entries. It was inspired by a common need for engineering teams I have worked on to
+have one team member perform some specific action each week (pick a lunch spot, pick a
+song track, etc.). It allows for users to upload `.csv` files or entries separated by
+new lines. Users are also able to download the contents of the list after it has been
+generated as well. It is written in Typescript and was bootstrapped with
+[Create React App](https://github.com/facebook/create-react-app). For its components, it
+makes use of the [Material UI](https://material-ui.com) library, and uses the
+[file-saver](https://www.npmjs.com/package/file-saver) package for the interactions with
+the file system.
 
-In the project directory, you can run:
+## Code Organization
 
-### `npm start`
+The code for this single page application (SPA) is broken down into several modular
+elements.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Constants`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This is where the constant content of the project is stored. Due to its relatively small
+size, there are only a few files in this directory.
 
-### `npm test`
+### `Display`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This directory stores the main components of the app, made to interact with the users.
+In it you can find files handling the input and output functionality of the application,
+as well as for the introduction to the application, the footer, and the popups which can
+appear.
 
-### `npm run build`
+### `App.tsx`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is the main entrypoint of the application. It outlines how each of the display
+elements should interact with one another. It provides the wiring between the elements.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Code Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This code is deployed to [Github Pages](https://pages.github.com), making use of the
+[`gh-pages`](https://www.npmjs.com/package/gh-pages) package. If you look into the
+`package.json`'s `scripts` section, you will see two entries added beyond the ones which
+are added by default when using `create-react-app`. These allow for it to be deployed by
+running `npm run deploy`.

@@ -2,14 +2,14 @@ import React, { FC } from "react";
 import { Snackbar, useTheme } from "@material-ui/core";
 import Alert from '@material-ui/lab/Alert';
 
-type DownloadSnackbarProps = {
+type ShuffleSnackbarProps = {
   message: string,
   open: boolean,
   severity?: "success" | "info" | "warning" | "error",
   handleClose: (event?: React.SyntheticEvent, reason?: string) => void,
 }
 
-export const FileSnackbar: FC<DownloadSnackbarProps> = (props) => {
+export const ShuffleSnackbar: FC<ShuffleSnackbarProps> = (props) => {
   const theme = useTheme();
 
   return (
